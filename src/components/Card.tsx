@@ -1,6 +1,5 @@
-"use client";
-
 import Image from "next/image";
+import InteractiveCard from "@/components/InteractiveCard";
 
 interface CardProps {
   venueName?: string;
@@ -12,7 +11,7 @@ export default function Card({
   imgSrc = "/img/bloom.jpg",
 }: CardProps) {
   return (
-    <div className="w-[300px] rounded-xl overflow-hidden shadow-lg bg-white">
+    <InteractiveCard>
       <div className="relative w-full h-[200px]">
         <Image
           src={imgSrc}
@@ -25,6 +24,6 @@ export default function Card({
       <div className="p-4">
         <h2 className="text-lg font-semibold text-gray-800">{venueName}</h2>
       </div>
-    </div>
+    </InteractiveCard>
   );
 }
