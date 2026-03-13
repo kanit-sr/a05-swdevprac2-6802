@@ -14,13 +14,14 @@ import DateReserve from "@/components/DateReserve";
 
 export default function BookingPage() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-gray-50 px-4">
+    <Box className="flex min-h-screen items-center justify-center bg-gray-50 px-4"
+    sx = {{ backgroundColor: "#121439" }}>
       <Box
         component="form"
         className="w-full max-w-xl rounded-xl bg-white p-6 shadow-lg"
         sx = {{ display: "flex", flexDirection: "column", alignItems: "center", backgroundColor: "#c2c4dd" }}
       >
-        <Typography variant="h5" component="h1" sx={{ mb: 3, fontWeight: 700 , color: "#190c42bc" }}>
+        <Typography variant="h4" component="h1" sx={{ mb: 3, fontWeight: 700 , color: "#190c42bc" }}>
           Venue Booking
         </Typography>
 
@@ -55,6 +56,6 @@ export default function BookingPage() {
           </Button>
         </Box>
       </Box>
-    </main>
+    </Box>
   );
 }

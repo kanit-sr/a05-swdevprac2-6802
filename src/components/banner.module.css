@@ -10,7 +10,7 @@
   /* วางทับรูปเต็มพื้นที่ด้วยสีโปร่งใส เพื่อให้ข้อความอ่านง่ายขึ้น */
   position: absolute;
   inset: 0; /* shorthand สำหรับ top:0 right:0 bottom:0 left:0 */
-  background-color: #37353e99; /* #37353E + 60% opacity */
+  background-color: #21193e99; /* #37353E + 60% opacity */
   z-index: 1;
 }
 
